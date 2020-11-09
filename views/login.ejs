@@ -1,0 +1,34 @@
+<%- include ('partials/header'); -%>
+
+<!-- =====================================login form============================================= -->
+        <div class="modal-content container mt-5 mb-5">
+            <div class="modal-header">
+                <h1 class="modal-title mx-auto text-success font-weight-bolder display-4" id="exampleModalLongTitle">
+                    LOGIN</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Username</label>
+                      <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" name="password" placeholder="Enter Mobile Number" required>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer mx-auto">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                  <button type="submit" class="btn btn-success">LOGIN</button>
+                </div>
+              </form>
+        </div><br>
+<%- include ('partials/footer'); -%>
